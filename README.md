@@ -38,7 +38,7 @@ npm run dev
 
 ``` 
 
-To go to client  [http://localhost:3000](http://localhost:3000) 
+To go to client  [http://localhost:3000](http://localhost:3000)  , 
 To go to admin panal [http://localhost:3000/studio](http://localhost:3000/studio) 
 
 
