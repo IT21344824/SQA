@@ -1,36 +1,42 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+## Group details
+
+Akidu
+	IT21344824
+	T.E.M.A.P. Ekanayake
+	IT21344824@my.sliit.lk
+J R
+	Name :Jayawardhana  J. R. K. B
+	ID : IT21352294
+	Email: it21352294@my.sliit.lk 
+	+94 77 260 0946
+
+Champika
+	Name : Ranaweera C.
+	ID : IT21271250
+	Email: it21271250@my.sliit.lk 
+	+94 70 561 8525
+
+Benji
+	Name : Hemashi T.G.B
+	ID : IT21290060
+	Email: it21290060@my.sliit.lk 
+	+94 71 188 0129
+
 ## Getting Started
 
-First, run the development server:
+First, if data base is changed run :
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run typegen
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To go to client  [http://localhost:3000](http://localhost:3000) 
+To go to admin panal [http://localhost:3000/studio](http://localhost:3000/studio) 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
