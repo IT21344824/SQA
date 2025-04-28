@@ -17,9 +17,9 @@ const Header = () => {
 
 
     return (
-        <header className='flex flex-wrap justify-baseline items-center px-4 py-2'>
+        <header className='flex flex-wrap justify-baseline items-center px-4 py-2 border-b-2 bg-gray-300'>
             {/* Top row */}
-            <div className='flex w-full flex-wrap justify-between items-center   '>
+            <div className='flex w-full flex-wrap justify-between items-center'>
 
 
                 <Link href="/"
@@ -31,8 +31,8 @@ const Header = () => {
                         className='bg-gray-100 focus:outline-none focus:ring-2 text-gray-800 px-4 py-2 rounded focus:ring-blue-500 focus:ring-opacity-50 border w-full max-w-4xl' />
                 </Form>
 
-                <div className='flex items-center space-x-4 mt-4 sm:mt-0 flex-1'>
-                    <Link href="/basket" className='flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center   space-x-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+                <div className='flex items-center space-x-4 mt-4 sm:mt-0 mr-10 '>
+                    <Link href="/basket" className='flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center   space-x-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded '>
                         <TrolleyIcon className='w-6 h-6' />
                         {/* span item count */}
                         <span className='absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs'>{itemCount}</span>
@@ -43,7 +43,7 @@ const Header = () => {
                     {/* user area */}
 
                     <ClerkLoaded>
-                        <SignedIn>
+                        <SignedIn >
                             <Link href="/orders"
                                 className='flex-1 relative flex justify-center sm:justify-start sm:flex-none items-center   space-x-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' >
                                 <PackageIcon className='w-6 h-6' />
@@ -61,7 +61,13 @@ const Header = () => {
                                 </div>
                             </div>
                         ) : (
-                            <SignInButton mode='modal' />
+                            <SignInButton mode='modal' >
+                                <button
+                                    className="px-4 py-2 rounded-full bg-blue-400 text-black text-sm font-semibold hover:bg-blue-600 transition-colors border-blue-900 border-2"
+                                >
+                                    SIGN IN
+                                </button>
+                            </SignInButton>
                         )}
                     </ClerkLoaded>
 

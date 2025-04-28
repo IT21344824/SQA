@@ -24,12 +24,19 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, if data base is changed run :
+First, if database data is changed run :
 
 ```bash
 npm run typegen
 
 ```
+
+then to install dependencies  
+
+```bash
+npm install
+
+``` 
 
 then to start 
 

@@ -1,11 +1,12 @@
-import AddToBasketButton from '@/components/product_comps/AddToBasketButton';
-import { Button } from '@/components/ui/button';
+// import AddToBasketButton from '@/components/product_comps/AddToBasketButton';
+// import { Button } from '@/components/ui/button';
 import { ImageUrl } from '@/lib/ImageUrl';
 import { getProductBySlug } from '@/sanity/lib/products/getProductBySlug';
 import { PortableText } from 'next-sanity';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import React from 'react'
+import AddToCartButton from '@/components/product_comps/AddToCartButton';
 
 const ProductPage = async ({ params }: { params: Promise<{ slug: string }>; }) => {
     const { slug } = await params;
@@ -25,7 +26,7 @@ const ProductPage = async ({ params }: { params: Promise<{ slug: string }>; }) =
 
                     {product.image && (
                         <Image
-                            className="object-contain transition-transform duration-300 hover:scale-105"
+                            className="object-contain transition-transform duration-300 hover:scale-105 border-2"
                             src={ImageUrl(product.image).url()}
                             alt={product.name || "product image"}
                             fill
@@ -55,8 +56,8 @@ const ProductPage = async ({ params }: { params: Promise<{ slug: string }>; }) =
                     </div>
 
                     <div className='mt-6'>
-                        <AddToBasketButton product={product} disabled={isOutOfStock} />
-                        <Button>add</Button>
+                        {/* <AddToBasketButton product={product} disabled={isOutOfStock} /> */}
+                        <AddToCartButton product={product} disabled={isOutOfStock} />
                     </div>
                 </div>
 
