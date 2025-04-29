@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: "no signatuter" }, { status: 400 });
     }
 
-    const webhookSecret = process.env.STRIPE_WENHOOK_SECRE;
+    const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
     if (!webhookSecret) {
         console.log(" stripe webhook secrete is not set");
         return NextResponse.json({ error: "stripe webhook secrete is not set" }, { status: 400 });

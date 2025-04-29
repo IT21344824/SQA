@@ -45,6 +45,22 @@ npm run dev
 
 ``` 
 
+
+then create a new terminal and sign in to stripe 
+
+```bash
+stripe login
+
+``` 
+then go to the provided link and grant access
+
+then run follwing command to listen to webhook so when the trancation is done then create a order (don't cloase the terminal)
+
+```bash
+stripe listen --forward-to localhost:4242/webhook
+
+``` 
+
 To go to client  [http://localhost:3000](http://localhost:3000)  , 
 To go to admin panal [http://localhost:3000/studio](http://localhost:3000/studio) 
 
