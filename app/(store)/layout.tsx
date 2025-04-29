@@ -9,6 +9,7 @@ import { SanityLive } from '@/sanity/lib/live';
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { DisableDraftMode } from '@/components/DisableDraftMode';
+import HeaderBottom from '@/components/HeaderBottom';
 
 
 export default async function RootLayout({
@@ -28,6 +29,7 @@ export default async function RootLayout({
           )}
           <main>
             <Header />
+            <HeaderBottom />
             {children}
           </main>
           <SanityLive />

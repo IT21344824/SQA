@@ -28,6 +28,7 @@ const AddToCartButton = ({ product, disabled }: AddToBasketButtonProps) => {
             addItem(product);
         }
         setLocalQuantity(1); // reset after adding
+        alert("item has added")
     };
 
     const handleIncrement = () => {
